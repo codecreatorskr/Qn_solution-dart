@@ -1,14 +1,41 @@
+//The address problem: there is list of 5 nullable strings(Pin Code, Address, City, State) if there is null string please mention that particular, and give error
+
 void main() {
-  // List<String> Values = ['Address', 'City', 'State', 'Pincode'];
-  
-  String Address = "A";
-  String? City;
-  String? State;
-  int Pincode = 1234;
+  // String? address;
+  // String? city;
+  // String? state;
+  // String? pincode;
 
-  String result =
-      [Address, City, State, Pincode].contains(City) ? 'NotNull' : 'Null';
+  // address = 'Udaipur,Rajasthan';
+  // city = 'udaipur';
+  // state = 'rajasthan';
+  // pincode = '313001';
 
-  print(result);
-  // print(Values);
+  // bool result = [address, city, state, pincode].contains(null);
+
+  // print(result ? 'Please complete your profile' : 'Welcome');
+
+
+
+//➡️Using Loops to solve this problem.
+  String? address;
+  String? city;
+  String? state;
+  String? pincode;
+
+  address = 'Udaipur Rajasthan';
+  city = 'udaipur';
+  state = 'rajasthan';
+  pincode = '313002';
+
+  List fulladdress = [address, city, state, pincode];
+
+  for (int i = 0; i < 1; i++) {
+    if (fulladdress.contains(null)) {
+      print('it does not exist : fulladdress');
+    } else {
+      print('it exist');
+    }
+  }
 }
+

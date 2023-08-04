@@ -9,7 +9,7 @@ void main() {
 
   String result = (enteredusername == userName && enteredpassword == password)
       ? 'Welcome Back'
-      : 'error userName: admin and password: --- not found';
+      : 'error userName: ..... and password: .... not found';
 
   print(result);
 
