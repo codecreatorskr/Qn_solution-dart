@@ -2,27 +2,26 @@
 
 void main() {
   //founded username and password.
-  String Uname = "admin";
-  String Password = "admin123";
-  String EnteredUsername = "admin";
-  String EnteredPass = "admin123";
+  String userName = "admin";
+  String password = "admin123";
+  String enteredusername = "admin";
+  String enteredpassword = "admin123";
 
-  String result = (EnteredUsername == Uname && EnteredPass == Password)
-      ? 'Founded UserName and Password'
-      : 'error userName: admin and password: admin123 not found';
+  String result = (enteredusername == userName && enteredpassword == password)
+      ? 'Welcome Back'
+      : 'error userName: admin and password: --- not found';
 
   print(result);
 
-
 // error user: admin and password: admin123 not founded.
-  // String Uname = "admin";
-  // String Password = "admin123";
-  // String EnteredUsername = "admi";
-  // String EnteredPass = "admin12";
+  //String userName = "admin";
+  // String password = "admin123";
+  // String enteredusername = "admin";
+  // String enteredpassword = "admin123";
 
-  // String result = (EnteredUsername == Uname && EnteredPass == Password)
-  //     ? 'Founded UserName and Password'
-  //     : 'error userName: admin and password: admin123 not found';
+  // String result = (enteredusername == userName && enteredpassword == password)
+  //     ? 'Welcome Back
+  //     : 'error userName: --- and password: --- not found';
 
   // print(result);
 }
