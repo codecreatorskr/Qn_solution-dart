@@ -15,27 +15,16 @@ void main() {
 
   // print(result ? 'Please complete your profile' : 'Welcome');
 
-
-
 //➡️Using Loops to solve this problem.
-  String? address;
-  String? city;
-  String? state;
-  String? pincode;
 
-  address = 'Udaipur Rajasthan';
-  city = 'udaipur';
-  state = 'rajasthan';
-  pincode = '313002';
+  List list = [1, 2, 3, 4,'saurabh','kumar'];
+  var value = 4;
 
-  List fulladdress = [address, city, state, pincode];
-
-  for (int i = 0; i < 1; i++) {
-    if (fulladdress.contains(null)) {
-      print('it does not exist : fulladdress');
-    } else {
-      print('it exist');
+  for (int i = 0; i <= list.length; i++) {
+    if (list[i] == value) {
+      print('${list[i]} exist');
+      return;
     }
   }
+  print('num not exist');
 }
-
