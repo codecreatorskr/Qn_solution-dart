@@ -3,6 +3,10 @@
 import 'dart:io';
 
 void main() {
+  Pyramid();
+}
+
+void Pyramid() {
   stdout.write("Enter the number: ");
   int? n = int.parse(stdin.readLineSync()!);
   for (int i = 1; i <= n; i++) {
@@ -14,6 +18,7 @@ void main() {
     }
     stdout.write('\n');
   }
+  return;
 }
 
 //2.The address problem: there is list of 5 nullable strings(Pin Code, Address, City, State) if there is null string please mention that particular, and give error
