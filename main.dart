@@ -1,30 +1,77 @@
+//Classes and object problem Solution.
+//7.2 -> Write a Dart a class called 'Rectangle' with properties for width and height. Include two methods to calculate rectangle area and perimeter. Create an instance of the 'Rectangle' class and calculate its area and perimeter.
+
+
+// void main() {
+//   var calculate = Rectangle();
+//   calculate.calculateArea();
+//   calculate.calculatePerimeter();
+// }
+
+// class Rectangle {
+//   int width = 10;
+//   int height = 5;
+
+//   void calculateArea() {
+//     print(height * width);
+//   }
+
+//   void calculatePerimeter() {
+//     print(2 * (height + width));
+//   }
+// }
+
+
+
+
+//7.1 Write a Dart class called "User" with properties for name, age and country. Include a method to display the person's details. Create two instances of the 'User' class and display their details.
+// void main() {
+//   var userdetails = User();
+//   userdetails.printName();
+//   userdetails.printAge();
+// }
+
+// class User {
+//   String name = 'Saurabh';
+//   int age = 20;
+
+//   void printName() {
+//     print(name);
+//   }
+
+//   void printAge() {
+//     print(age);
+//   }
+// }
+
+
+
+
+
+
+
 //6. Snail problem:The snail climbs up 7 feet each day and slips back 2 feet each night.How many days will it take the snail to get out of a well with the given depth?
-void main() {
-  snail(12);
-}
+// void main() {
+//   snail(19);
+// }
 
-void snail(int wellDepth) {
-  int climbPerDay = 7;
-  int slipsPerNeight = 2;
-  int currentHeight = 0;
-  int days = 0;
+// void snail(int wellDepth) {
+//   int climbPerDay = 7;
+//   int slipsPerNight = 2;
+//   int currentHeight = 0;
+//   int days = 0;
 
-  while (currentHeight < wellDepth) {
-    currentHeight += climbPerDay;
-    if (currentHeight >= wellDepth) {
-      break;
-    }
-    currentHeight -= slipsPerNeight;
-    days++;
-  }
-  days++;
-  print('It will take the snail $days days to get out of the well.');
-}
-
-
-
-
-
+//   while (currentHeight < wellDepth) {
+//     currentHeight += climbPerDay;
+//     if (currentHeight >= wellDepth) {
+//       break;
+//     }
+//     currentHeight -= slipsPerNight;
+//     days++;
+//   }
+//   days++;
+//   print('It will take the snail $days days to get out of the well.');
+// }
 
 // 5.search and print index of passed number in this [1, 4, 9, 16, 25, 36, 49, 64, 81, 100,6,78,92,57]and if number does not exist print error message
 // import 'dart:io';
@@ -41,7 +88,9 @@ void snail(int wellDepth) {
 
 //   int index = number.indexOf(value);
 
-//   if (index != -1) {
+//   print(index);
+
+//   if (index == number.length) {
 //     print('The number $value is found at index $index.');
 //   } else {
 //     print('Error: The number $value does not exist in the list.');
@@ -69,7 +118,7 @@ void snail(int wellDepth) {
 // void smaller(int input) {
 //   List list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
 
-//   for (int i = 0; i <= 9; i++) {
+//   for (int i = 0; i < list.length; i++) {
 //     if (input > list[i]) {
 //       print(list[i]);
 //     }
