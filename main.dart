@@ -1,46 +1,45 @@
 //Classes and object problem Solution.
 //7.2 -> Write a Dart a class called 'Rectangle' with properties for width and height. Include two methods to calculate rectangle area and perimeter. Create an instance of the 'Rectangle' class and calculate its area and perimeter.
 
-
 // void main() {
-//   var calculate = Rectangle();
-//   calculate.calculateArea();
-//   calculate.calculatePerimeter();
+//   var calculate = Rectangle(width: 12,height: 10);
+//   print(calculate.calculateArea());
+//   print(calculate.calculatePerimeter());
 // }
 
 // class Rectangle {
-//   int width = 10;
-//   int height = 5;
+//   int width;
+//   int height;
 
-//   void calculateArea() {
-//     print(height * width);
+//   Rectangle({required this.height,required this.width});
+
+//   int calculateArea() {
+//     return (height * width);
 //   }
 
-//   void calculatePerimeter() {
-//     print(2 * (height + width));
+//   int calculatePerimeter() {
+//     return (2 * (height + width));
 //   }
 // }
 
-
-
-
 //7.1 Write a Dart class called "User" with properties for name, age and country. Include a method to display the person's details. Create two instances of the 'User' class and display their details.
+
 // void main() {
-//   var userdetails = User();
-//   userdetails.printName();
-//   userdetails.printAge();
+//   User userdetails = User(name: 'saurabh', age: 20, country: "India");
+
+//   print(userdetails.age);
+//   print(userdetails.printName());
+//   print(userdetails.country);
 // }
 
 // class User {
-//   String name = 'Saurabh';
-//   int age = 20;
+//   String name;
+//   int age;
+//   String country;
+//   User({required this.name, required this.age, required this.country});
 
-//   void printName() {
-//     print(name);
-//   }
-
-//   void printAge() {
-//     print(age);
+//   String printName() {
+//     return name;
 //   }
 // }
 
