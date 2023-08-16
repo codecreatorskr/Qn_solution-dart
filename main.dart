@@ -1,3 +1,23 @@
+//9 ==>>one question muje agr print krwana hai 10:00, 10:30, 11:00, 11:30 ... iss tareh k format mai pure 24 hours ko kse karenge make an dart solution by tmr
+void main() {
+  for (int i = 0; i < 24; i++) {
+    for (int j = 0; j < 60; j += 30) {
+      String hour = i.toString().padLeft(2, '0');
+      String minute = j.toString().padLeft(2, '0');
+
+      print('$hour:$minute');
+
+      //   stdout.write(i.toString().padLeft(2));
+      //   print(':${j.toString().padLeft(2, '0')}');
+    }
+  }
+}
+
+
+
+
+
+
 //8=> List (Iterable) and Sets And Map
 
 //8.4 Create a map where the keys are the names of the students in your class and the values are their ages.
@@ -235,6 +255,9 @@
 //   }
 // }
 
+
+
+
 //7.1 Write a Dart class called "User" with properties for name, age and country. Include a method to display the person's details. Create two instances of the 'User' class and display their details.
 
 // void main() {
@@ -278,6 +301,9 @@
 //   days++;
 //   print('It will take the snail $days days to get out of the well.');
 // }
+
+
+
 
 // 5.search and print index of passed number in this [1, 4, 9, 16, 25, 36, 49, 64, 81, 100,6,78,92,57]and if number does not exist print error message
 // import 'dart:io';
